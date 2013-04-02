@@ -171,9 +171,10 @@ name="pyt01__button" id="pyt01__button">▶</span><div style="display:inline;" c
 np. 2d3c3354be60ccc79187fdb84d436f168fd07a28?
 
 </div>
-<div class="stylepoint_body" name="pyt01__body" id="pyt01__body" style="display: inline; "><fieldset class="answer">
+<div class="stylepoint_body" name="pyt01__body" id="pyt01__body" style="display: none; "><fieldset class="answer">
   
-???
+<pre>git archive -o plik.zip 2d3c335</pre>
+Stworzy plik zip o nazwie "plik.zip", wystarczy wpisać 7 znaków danego zatwierdzenia.
 
 </fieldset></div></p>
 
@@ -188,9 +189,10 @@ name="pyt02__button" id="pyt02__button">▶</span><div style="display:inline;" c
 np. 2d3c3354be60ccc79187fdb84d436f168fd07a28?
 
 </div>
-<div class="stylepoint_body" name="pyt02__body" id="pyt02__body" style="display: inline; "><fieldset class="answer">
+<div class="stylepoint_body" name="pyt02__body" id="pyt02__body" style="display: none; "><fieldset class="answer">
   
-???
+<pre>git show 2d3c335:plik.cpp</pre>
+Wyświetli zawartość pliku "plik.cpp" z podanej rewizji
 
 </fieldset></div></p>
 
@@ -204,9 +206,9 @@ name="pyt03__button" id="pyt03__button">▶</span><div style="display:inline;" c
 3. Jak usunąć z serwera o aliasie <i>github</i> gałąź <i>testowa</i>?
 
 </div>
-<div class="stylepoint_body" name="pyt03__body" id="pyt03__body" style="display: inline; "><fieldset class="answer">
+<div class="stylepoint_body" name="pyt03__body" id="pyt03__body" style="display: none; "><fieldset class="answer">
 
-???
+<pre>git push github :testowa</pre>
 
 </fieldset></div></p>
 
@@ -222,9 +224,10 @@ name="pyt04__button" id="pyt04__button">▶</span><div style="display:inline;" c
 który jest w katalogu roboczym ale jest ignorowany?
 
 </div>
-<div class="stylepoint_body" name="pyt04__body" id="pyt04__body" style="display: inline; "><fieldset class="answer">
+<div class="stylepoint_body" name="pyt04__body" id="pyt04__body" style="display: none; "><fieldset class="answer">
 
-???
+<pre>git rm --cached plik.cpp</pre>
+Plik "plik.cpp" przestanie być śledzony
 
 </fieldset></div></p>
 
@@ -280,9 +283,10 @@ name="pyt07__button" id="pyt07__button">▶</span><div style="display:inline;" c
 7. Jak stworzyć gałąź z dowolnego zatwierdzenia?
 
 </div>
-<div class="stylepoint_body" name="pyt07__body" id="pyt07__body" style="display: inline; "><fieldset class="answer">
+<div class="stylepoint_body" name="pyt07__body" id="pyt07__body" style="display: none; "><fieldset class="answer">
 
-???
+<pre>git branch galaz 2d3c335</pre>
+Tworzy gałąź o nazwie "galaz" z rewizji rozpoczynającej się od: 2d3c335
 
 </fieldset></div></p>
 
@@ -297,9 +301,9 @@ name="pyt08__button" id="pyt08__button">▶</span><div style="display:inline;" c
 np. <i>main.java</i> dla podanego zatwierdzenia, np. aktualnego stanu gałęzi <i>master</i>?
 
 </div>
-<div class="stylepoint_body" name="pyt08__body" id="pyt08__body" style="display: inline; "><fieldset class="answer">
+<div class="stylepoint_body" name="pyt08__body" id="pyt08__body" style="display: none; "><fieldset class="answer">
 
-<pre>???</pre>
+<pre>git blame -L 10,24 main.java master</pre>
 
 </fieldset></div></p>
 
@@ -313,9 +317,10 @@ name="pyt09__button" id="pyt09__button">▶</span><div style="display:inline;" c
 9. Jak wyświetlić nazwę użytkownika i jego email dla repozytorium, w którym pracujemy?
 
 </div>
-<div class="stylepoint_body" name="pyt09__body" id="pyt09__body" style="display: inline; "><fieldset class="answer">
+<div class="stylepoint_body" name="pyt09__body" id="pyt09__body" style="display: none; "><fieldset class="answer">
 
-???
+<pre>git config --get user.name</pre>
+<pre>git config --get user.email</pre>
 
 </fieldset></div></p>
 
@@ -329,10 +334,10 @@ name="pyt10__button" id="pyt10__button">▶</span><div style="display:inline;" c
 10. Jak wyświetlić wszystkie ustawienia dla danego repozytorium zdalnego, np. <i>gitent</i>?
 
 </div>
-<div class="stylepoint_body" name="pyt10__body" id="pyt10__body" style="display: inline; "><fieldset class="answer">
+<div class="stylepoint_body" name="pyt10__body" id="pyt10__body" style="display: none; "><fieldset class="answer">
 
 <p>
-<pre>???</pre>
+<pre>git remote show gitent</pre>
 </p>
 
 </fieldset></div></p>
@@ -347,10 +352,10 @@ name="pyt11__button" id="pyt11__button">▶</span><div style="display:inline;" c
 11. Jak zmienić komentarz do dodany do ostatniego zatwierdzenia?
 
 </div>
-<div class="stylepoint_body" name="pyt11__body" id="pyt11__body" style="display: inline; "><fieldset class="answer">
+<div class="stylepoint_body" name="pyt11__body" id="pyt11__body" style="display: none; "><fieldset class="answer">
 
 <p>
-<pre>???</pre>
+<pre>git commit --amend -m "Nowy komentarz"</pre>
 </p>
 
 </fieldset></div></p>
@@ -366,10 +371,10 @@ name="pyt12__button" id="pyt12__button">▶</span><div style="display:inline;" c
 zmiany w plikach katalogu roboczego z ostatniego zatwierdzenia?
 
 </div>
-<div class="stylepoint_body" name="pyt12__body" id="pyt12__body" style="display: inline; "><fieldset class="answer">
+<div class="stylepoint_body" name="pyt12__body" id="pyt12__body" style="display: none; "><fieldset class="answer">
 
 <p>
-<pre>???</pre>
+<pre>git reset --hard HEAD^</pre>
 </p>
 
 </fieldset></div></p>
@@ -385,10 +390,10 @@ name="pyt13__button" id="pyt13__button">▶</span><div style="display:inline;" c
 żeby w katalogu roboczym zachować wersje plików z ostatniego zatwierdzenia?
 
 </div>
-<div class="stylepoint_body" name="pyt13__body" id="pyt13__body" style="display: inline; "><fieldset class="answer">
+<div class="stylepoint_body" name="pyt13__body" id="pyt13__body" style="display: none; "><fieldset class="answer">
 
 <p>
-<pre>???</pre>
+<pre>git reset HEAD^</pre>
 </p>
 
 </fieldset></div></p>
@@ -403,10 +408,10 @@ name="pyt14__button" id="pyt14__button">▶</span><div style="display:inline;" c
 14. Jakim poleceniem uzyskamy listę wszystkich plików śledzonych przez repozytorium?
 
 </div>
-<div class="stylepoint_body" name="pyt14__body" id="pyt14__body" style="display: inline; "><fieldset class="answer">
+<div class="stylepoint_body" name="pyt14__body" id="pyt14__body" style="display: none; "><fieldset class="answer">
 
 <p>
-<pre>???</pre>
+<pre>git ls-files</pre>
 </p>
 
 </fieldset></div></p>
